@@ -26,8 +26,8 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'DockerHubCredential') {
-                    sh 'docker tag calculator_python spe/calculator:latest'
-                    sh 'docker push spe/calculator'
+                    sh 'docker tag calculator_python dibyaruppal/calculator:latest'
+                    sh 'docker push dibyaruppal/calculator'
                     }
                  }
             }
