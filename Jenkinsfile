@@ -14,6 +14,14 @@ pipeline {
                 }
             }
         }
+        stage('Run Unit Test') {
+            steps {
+                script {
+                    // Run the unit test code
+                    sh 'python -m unittest unit_test_calculator.py'
+                }
+            }
+        }
         stage('Build Docker Image') {
             steps {
                 script {
