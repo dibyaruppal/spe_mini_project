@@ -1,6 +1,7 @@
 import math
 
 def factorial_function(x):
+    # New update
     if(x<0):
         return 0
     res = 1
